@@ -32,7 +32,7 @@ calculate(["2", "avg"]) == 2
 calculate(["avg"]) == 0
     // 0 / 0 = 0 (not really, but it's an edge case
 
-calculate(["1", "fact"]) == 1
+calculate(["0", "fact"]) == 1
 calculate(["1", "fact"]) == 1
 calculate(["2", "fact"]) == 2 // 2*1
 calculate(["5", "fact"]) == 120 // 5*4*3*2*1
