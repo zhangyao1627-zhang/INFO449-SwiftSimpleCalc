@@ -13,6 +13,7 @@ func calculate(_ arg: String) -> Int {
 // if you have implemented calculate() correctly
 //
 calculate(["2", "+", "2"]) == 4
+calculate(["4", "+", "4"]) == 8
 calculate(["2", "-", "2"]) == 0
 calculate(["2", "*", "2"]) == 4
 calculate(["2", "/", "2"]) == 1
