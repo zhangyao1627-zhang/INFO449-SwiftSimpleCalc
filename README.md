@@ -8,7 +8,7 @@ In this exercise, you will implement a pair of functions that do some simple mat
 ## To do that...
 ... you must first obtain a copy of the source. Do that by cloning this repository:
 
-        git clone https://bitbucket.org/TedNeward/uw-swift-simplecalc swift-simplecalc
+        git clone https://github.com/tedneward/uw-swift-simplecalc
 
 This will create a local copy of the project. 
 
