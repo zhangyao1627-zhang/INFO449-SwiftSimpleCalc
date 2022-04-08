@@ -50,9 +50,9 @@ The `calculate` method also needs to support a few other less-traditional expres
 For this latter set of operations, it is safe to assume that `["count"]` (no additional arguments) is 0, `["avg"]` is also 0, and `["fact"]` is 0. `["1", "fact"]` should return 1, and `["0", "fact"]` should also return 1. (Yes, 0-factorial is 1. True story.)
 
 ## Running the Playground
-The Playground should be configured to compile automatically; if it is not, look at the two icons in the lower-right corner. These can switch the Playground to either run automatically or run manually.
+The Playground should be configured to compile automatically; if it is not, look at the icon in the lower-left corner. If you do a long-click (click-and-hold) on that button, it will pop up a menu asking whether you want the Playground to compile automatically or manually.
 
-> (Sometimes XCode can get confused about your code while you are writing it, and earlier versions of XCode always compiled in the background, leading to XCode to be constantly in a state of confusion and requiring XCode to be restarted to clear out the confusion.)
+> (Sometimes XCode can get confused about your code while you are writing it, and earlier versions of XCode always compiled in the background, leading to XCode to be constantly in a state of confusion and requiring XCode to be restarted to clear out the confusion. This gives you the choice.)
 
 ## Extra credit
 You can earn two extra credit points as part of this assignment. These are described here, but will require you to uncomment the blocks of code for each in order to run them. Again, the goal is to make each of the expressions
