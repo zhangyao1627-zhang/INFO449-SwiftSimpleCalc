@@ -5,26 +5,34 @@ This homework is designed to force you to exercise your knowledge of the Swift p
 
 In this exercise, you will implement a pair of functions that do some simple mathematical calculations.
 
-## To do that...
-... you must first obtain a copy of the source. Do that by cloning this repository:
+## To get started...
+... you must first obtain a copy of the source. You do that by cloning this repository. Two options are available to you:
 
-        git clone https://github.com/tedneward/uw-swift-simplecalc
+1. **Fork this repository.** From the GitHub repository web page, click "Fork" in the upper-right. This will create a copy of this repository in your own GitHub account. From there do a `git clone` from your own copy of the GitHub repository. (If you are unsure of the clone syntax, open the new repository in your account from the web, and click the green "Code" button--it will offer the correct syntax to use.)
 
-This will create a local copy of the project. 
+2. **Clone and re-home this repository.** Open a "Command Prompt" or "Terminal" instance and use:
 
+        git clone https://github.com/tedneward/INFO449-SwiftSimpleCalc
+
+    ... to do the deed. This will also create a local copy of the project on your machine in a directory called `INFO449-SwiftSimpleCalc`. You will also need to "re-home" your local copy so it points to your own GitHub account; you can do this by creating a repository of this same name (`INFO449-SwiftSimpleCalc`) in your GitHub account and then executing `git remote set-url origin https://github.com/[your-ID]/INFO449-SwiftSimpleCalc.git`. (Needless to say, it's a lot easier to fork the repo.)
+
+    In order to store your changes to your own GitHub account, you need to create a new repository on GitHub (call it `INFO449-SwiftSimpleCalc`), and then change the project's settings to point to that new repository as the remote origin.
+
+        git remote set-url origin https://github.com/[your-ID]/INFO449-SwiftSimpleCalc.git
+
+    Note, this will appear to succeed whether you got the syntax of the URL correct or not, so do a quick push to make sure it all worked correctly:
+
+        git push
+
+    Git will ask you for your username and password, then (if everything was done correctly), it will upload the code to the new repository, and this is your new "home" for this project going forward. Verify the files are there by viewing your GitHub project through the browser.
+
+
+## To work on the code...
 To open this project in XCode, fire up XCode itself, then File|Open the `SimpleSwift.playground` file.
 
 > Interesting side note: In truth the Playground is not a file, but a directory that pretends to be a file. This is a common trick in the macOS/iOS world. If you look at it Finder, it will appear to be a single file; if you look at it from Terminal, however, you can navigate "into" the file and view its contents. In the case of Playgrounds, the actual code is stored in `Contents.swift`. As it turns out, this is also how executables ("bundles") work in both iOS and macOS.
 
-In order to store your changes to your own GitHub account, you need to create a new **public** repository on GitHub (call it `swift-simplecalc`), and then change the project's settings to point to that new repository as the remote origin. To do this, in a Terminal window, navigate to the directory storing your local project code (`swift-simplecalc` if you used my command-line example above), and execute the following:
-
-        git remote set-url origin https://github.com/[your-ID]/swift-simplecalc.git
-
-Be warned: This command will appear to succeed regardless of whether you got the syntax of the URL correct or not, so do a quick push to make sure it all worked correctly:
-
-        git push
-
-Git will ask you for your username and password, then (if everything was done correctly), it will upload the code to the new repository, and this is your new "home" for this project going forward. Verify the files are there by viewing your GitHub project through the browser.
+When you make changes to the playground, be sure to commit the entire directory contents (`git add SimpleSwift.playground; git commit -m "Change message"`) and push the contents up to the GitHub server (`git push`). We will never see your changes if you do not push to the server!
 
 **NOTE:** Your grade for this assignment (and all future assignments) will be based on what we see in the GitHub repository, and nothing else. A basic rule of this course: **If it isn't in GitHub, it doesn't exist.**
 
@@ -55,7 +63,7 @@ The Playground should be configured to compile automatically; if it is not, look
 > (Sometimes XCode can get confused about your code while you are writing it, and earlier versions of XCode always compiled in the background, leading to XCode to be constantly in a state of confusion and requiring XCode to be restarted to clear out the confusion. This gives you the choice.)
 
 ## Extra credit
-You can earn two extra credit points as part of this assignment. These are described here, but will require you to uncomment the blocks of code for each in order to run them. Again, the goal is to make each of the expressions
+You can earn two extra credit points as part of this assignment. These are described here, but will require you to uncomment the blocks of code for each in order to run them.
 
 #### Implement `calculate` to handle negative numbers
 What happens when somebody puts a "-" in front of one of those numbers? (This can easily turn into some edge-case nightmares, such as "2 - - 2" trying to figure out where those negative signs go; for our purposes, assume that there will never be a space between a negative sign and the number if it is going to be a negative number.)
