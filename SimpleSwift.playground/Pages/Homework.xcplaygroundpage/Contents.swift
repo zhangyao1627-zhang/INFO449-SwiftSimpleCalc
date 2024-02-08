@@ -35,6 +35,7 @@ func calculate(_ arg: String) -> Int {
 }
 
 //: Below this are the test expressions/calls to verify if your code is correct.
+//:
 //: ***DO NOT MODIFY ANYTHING BELOW THIS***
 //: -------------------------------------------
 //: All of these expressions should return true
@@ -76,8 +77,10 @@ calculate("1 2 3 4 5 avg") == 3
 calculate("5 fact") == 120
 
 //: -------------------------------------------
-//: These are extra credit tests; they are commented out so that they do not conflict with you work until you choose to implement them.
-//: Uncomment them to turn them on for evaluation
+//: These are extra credit tests; they are commented out 
+//: so that they do not conflict with you work until you 
+//: choose to implement them.
+//: Uncomment them to turn them on for evaluation.
 //:
 //: Implement `calculate([String])` and `calculate(String)` to handle negative numbers. You need only make the tests below pass. (You do not need to worry about "fact"/factorial with negative numbers, for example.)
 //:
@@ -99,9 +102,14 @@ calculate("-2 / 2") == -1
 calculate("1 -2 3 -4 5 count") == 5
 */
  
-//: Implement `calculate([String])` and `calculate(String)` to use and return floating-point values. You need only make the tests below pass. (Factorial of floating-point numbers doesn't make much sense, either.)
+//: Implement `calculate([String])` and `calculate(String)` to use 
+//: and return floating-point values. You need only make the tests 
+//: below pass. (Factorial of floating-point numbers doesn't make 
+//: much sense, either.)
 //:
-//: Swift *will* allow you to overload based on return times, so the below functions can co-exist simultaneously with the Integer-based versions above.
+//: Swift *will* allow you to overload based on return types, so 
+//: the below functions can co-exist simultaneously with the 
+//: Integer-based versions above.
 //: 
 //: This is worth 1 pt
 /*
