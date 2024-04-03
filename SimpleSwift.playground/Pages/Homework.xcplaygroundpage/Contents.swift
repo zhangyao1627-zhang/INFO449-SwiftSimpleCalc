@@ -137,6 +137,8 @@ calculate("2 - -2") == 4
 calculate("-2 / 2") == -1
 
 calculate("1 -2 3 -4 5 count") == 5
+*/
+ 
 //: Implement `calculate([String])` and `calculate(String)` to use 
 //: and return floating-point values. You need only make the tests 
 //: below pass. (Factorial of floating-point numbers doesn't make 
